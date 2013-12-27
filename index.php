@@ -121,6 +121,7 @@ END;
         <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+  <?=$htmlBody?>
     <div class="col-lg-7">
          <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
            <ol class="carousel-indicators">
