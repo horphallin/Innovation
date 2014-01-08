@@ -1,0 +1,48 @@
+plugin.tx_youtubeapi {
+	view {
+		templateRootPath = {$plugin.tx_youtubeapi.view.templateRootPath}
+		partialRootPath = {$plugin.tx_youtubeapi.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_youtubeapi.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_youtubeapi.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+page.includeJSFooter {
+	youtube = {$const.path.js}youtube.js
+	youtube {
+		#disableCompression = 1
+		#excludeFromConcatenation = 1
+	}
+}
+
+
+plugin.tx_youtubeapi._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-youtubeapi table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-youtubeapi table th {
+		font-weight:bold;
+	}
+
+	.tx-youtubeapi table td {
+		vertical-align:top;
+	}
+)

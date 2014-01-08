@@ -1,0 +1,16 @@
+plugin.tx_youtubeapi {
+	view {
+		# cat=plugin.tx_youtubeapi/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:youtubeapi/Resources/Private/Templates/
+		# cat=plugin.tx_youtubeapi/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:youtubeapi/Resources/Private/Partials/
+		# cat=plugin.tx_youtubeapi/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:youtubeapi/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_youtubeapi//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+const.path.js = EXT:youtubeapi/Resources/Public/Js/
